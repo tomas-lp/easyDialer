@@ -1,6 +1,6 @@
-import { View, Text, Image, Linking, TouchableWithoutFeedback } from "react-native";
+import { View, Text, Image, Linking, Pressable } from "react-native";
 
-export default Contacto = (props) => {
+const Contacto = (props) => {
   let color = props.color;
 
   while (color >=5){
@@ -24,40 +24,43 @@ export default Contacto = (props) => {
       break;
   }
 
-  llamar = (num) => {
-    // Linking.openURL(`whatsapp://send?phone=\${${props.numero}}`);
-    Linking.openURL(`tel:${num}`);
+  const llamar = (num) => {
+    Linking.openURL(`whatsapp://send?phone=\${${num}}`);
+    // Linking.openURL(`tel:${num}`);
   }
 
   return (
     <View style={
       {
-        width:'90%',
+        width:'100%',
         padding:0,
         backgroundColor: color,
         borderRadius:16,
         elevation:8,
-        flexDirection:'row',
+        flexDirection:'column',
         alignItems:"center",
         marginBottom:10
       }}>
-      <TouchableWithoutFeedback style={{width:'100%'}} onPress={()=>{llamar(props.numero)}}>
-        <View style={{flexDirection:'row', alignItems:"center", width:'100%'}}>
+      <Pressable style={{width:'100%'}} onPress={()=>{llamar(props.numero)}}>
+        <View style={{flexDirection:'column', alignItems:"center", width:'100%'}}>
           <Image
-          source={require('../../assets/user1.png')}
-          style={{width:100, height:100, backgroundColor:'#fff', borderTopLeftRadius:16, borderBottomLeftRadius:16}}
+          // source={require('../../assets/graciela.jpeg')}
+          source={props.imagen}
+          style={{width:100, height:100, backgroundColor:'#fff'}}
           ></Image>
 
           <Text 
             style={
             {
-              fontSize:20,
+              fontSize:30,
               fontWeight: 400,
               marginLeft:16
             }}>
               {props.nombre}
           </Text>   
         </View>
-      </TouchableWithoutFeedback>   
+      </Pressable>   
     </View>
 )}
+
+export default Contacto;

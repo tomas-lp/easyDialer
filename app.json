@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "easyDialer",
+    "name": "Llamar",
     "slug": "easyDialer",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tomaslp.easyDialer"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1c29cc04-cda5-4816-8ad3-d3efb77b9295"
+      }
     }
   }
 }

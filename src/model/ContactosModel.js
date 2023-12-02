@@ -1,22 +1,27 @@
 export let contactos = [
   {
-    nombre: 'Contacto 1',
-    numero: ''
+    nombre: 'Graciela',
+    numero: '+543794342335',
+    imagen: require('../../assets/graciela.jpeg')
   },
   {
-    nombre: 'Contacto 2',
-    numero: ''
+    nombre: 'Yohana',
+    numero: '+543794695012',
+    imagen: require('../../assets/yohana.jpeg')
   },
   {
-    nombre: 'Contacto 3',
-    numero: ''
+    nombre: 'Oscar',
+    numero: '+543794662239',
+    imagen: require('../../assets/oscar.jpeg')
   },
   {
-    nombre: 'Contacto 4',
-    numero: ''
+    nombre: 'Maciel',
+    numero: '+543794277862',
+    imagen: require('../../assets/maciel.jpeg')
   },
   {
-    nombre: 'Contacto 5',
-    numero: ''
+    nombre: 'Leo',
+    numero: '+543795070678',
+    imagen: require('../../assets/leo.jpeg')
   },
 ]

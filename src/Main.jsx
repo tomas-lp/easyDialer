@@ -2,18 +2,20 @@ import { View, Text, Image} from 'react-native'
 import StatusBar from './components/StatusBar'
 import ListaContactos from './components/ListaContactos'
 
-export default Main = () => (
+const Main = () => (
   <View>
     <StatusBar />
-    <Text style={
+    {/* <Text style={
       {
         textAlign: 'center', 
         fontSize:48, 
         marginTop:32,
         marginBottom:32
       }
-      }>Llamar</Text>
+      }>Llamar</Text> */}
     
     <ListaContactos />
   </View>
 )
+
+export default Main;
